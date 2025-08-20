@@ -1,0 +1,203 @@
+&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-BR"&gt;
+&lt;head&gt;
+    &lt;link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&amp;display=swap" rel="stylesheet"&gt;
+
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+    &lt;title&gt;Meu Portfólio&lt;/title&gt;
+    &lt;style&gt;
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #222;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.3s ease, color 0.3s ease;
+            display: inline-block; /* necessário para o transform funcionar*/
+        }
+        nav a:hover {
+            transform: scale(1.2); /* efeito de aumento suave */
+            color: #ffffff; /* opcional: muda a cor no hover */
+        }
+        section {
+            padding: 40px 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        /* Imagens com bordas arredondadas suaves */
+        img {
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        /* Efeito suave ao passar o mouse */
+        img:hover {
+            transform: scale(1.03);
+        }
+
+        .foto-perfil {
+            width: 150px; /* tamanho da foto */
+            height: 150px;
+            object-fit: cover; /* garante que a foto não distorça */
+            border-radius: 50%; /* deixa redonda */
+            border: 3px solid white; /* borda branca em volta */
+            margin-bottom: 10px; /* espaço abaixo da foto */
+        }
+
+        .projetos-container {
+            display: flex;
+            gap: 20px; /* espaço entre os cards */
+            flex-wrap: wrap; /* quebra linha em telas pequenas */
+            justify-content: center;
+        }
+
+        .projeto-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px; /* largura fixa */
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* sombra suave */
+            transition: transform 0.3s ease;
+        }
+
+        .projeto-card:hover {
+            transform: scale(1.03);
+        }
+
+        .projeto-card h3 {
+            margin-top: 0;
+            color: #222;
+        }
+
+        .habilidades-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .habilidade-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .habilidade-card:hover {
+            transform: scale(1.03);
+        }
+
+        .habilidade-card h3 {
+            margin-top: 0;
+            color: #222;
+        }
+
+
+
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;header&gt;
+    &lt;img src="fotoperfil.webp" alt="Foto de Anthony Guedes" class="foto-perfil"&gt;
+    &lt;h1&gt;Anthony Guedes&lt;/h1&gt;
+    &lt;p&gt;Ciência da Computação - Universidade Franciscana&lt;/p&gt;
+&lt;/header&gt;
+
+&lt;nav&gt;
+    &lt;a href="#sobre"&gt;Sobre Mim&lt;/a&gt;
+    &lt;a href="#projetos"&gt;Projetos&lt;/a&gt;
+    &lt;a href="#contato"&gt;Contato&lt;/a&gt;
+&lt;/nav&gt;
+
+
+&lt;section id="sobre"&gt;
+    &lt;h2&gt;Sobre Mim&lt;/h2&gt;
+    &lt;p&gt;Sou estudante do curso superior de Ciência da Computação, atualmente estou cursando o 6° semestre na Universidade Franciscana, em Santa Maria. Tenho experiências em projetos de softwares realizados na universidade com Java, HTML, CSS, JavaScript e estou aprendendo novas tecnologias constantemente.&lt;/p&gt;
+&lt;/section&gt;
+
+&lt;section id="habilidades"&gt;
+    &lt;h2&gt;Habilidades&lt;/h2&gt;
+    &lt;div class="habilidades-container"&gt;
+        &lt;div class="habilidade-card"&gt;
+            &lt;h3&gt;Habilidades Comportamentais&lt;/h3&gt;
+            &lt;ul&gt;
+                &lt;li&gt;Trabalho em equipe&lt;/li&gt;
+                &lt;li&gt;Boa comunicação&lt;/li&gt;
+                &lt;li&gt;Resolução de problemas&lt;/li&gt;
+                &lt;li&gt;Organização&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+
+        &lt;div class="habilidade-card"&gt;
+            &lt;h3&gt;Idiomas&lt;/h3&gt;
+            &lt;p&gt;&lt;strong&gt;Inglês:&lt;/strong&gt; Avançado&lt;/p&gt;
+            &lt;p&gt;Certificado: 450 horas de estudos de inglês pela YES Idiomas&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;
+
+
+&lt;section id="projetos"&gt;
+    &lt;h2&gt;Projetos&lt;/h2&gt;
+    &lt;div class="projetos-container"&gt;
+        &lt;div class="projeto-card"&gt;
+            &lt;h3&gt;Projeto 1&lt;/h3&gt;
+            &lt;p&gt;Breve descrição do projeto 1. Pode falar sobre as tecnologias usadas e o objetivo principal.&lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;div class="projeto-card"&gt;
+            &lt;h3&gt;Projeto 2&lt;/h3&gt;
+            &lt;p&gt;Breve descrição do projeto 2. Pode falar sobre as tecnologias usadas e o objetivo principal.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;section id="contato"&gt;
+    &lt;h2&gt;Contato&lt;/h2&gt;
+    &lt;a href="https://github.com/AnthyGuedes"&gt;
+        &lt;img src="Github.png" alt="ícone GitHub" width="60"&gt;
+    &lt;/a&gt;
+
+    &lt;a href="mailto:anthony.guedes@ufn.edu.br"&gt;
+        &lt;img src="email.png" alt="Enviar e-mail" width="60"&gt;
+    &lt;/a&gt;
+
+    &lt;p&gt;Email: anthony.guedes@ufn.edu.br&lt;/p&gt;
+
+&lt;/section&gt;
+
+&lt;footer&gt;
+    &lt;p&gt;&amp;copy; 2025 Seu Nome. Todos os direitos reservados.&lt;/p&gt;
+&lt;/footer&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;

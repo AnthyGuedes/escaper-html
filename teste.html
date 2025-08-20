@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Meu Portfólio</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #222;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.3s ease, color 0.3s ease;
+            display: inline-block; /* necessário para o transform funcionar*/
+        }
+        nav a:hover {
+            transform: scale(1.2); /* efeito de aumento suave */
+            color: #ffffff; /* opcional: muda a cor no hover */
+        }
+        section {
+            padding: 40px 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        /* Imagens com bordas arredondadas suaves */
+        img {
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        /* Efeito suave ao passar o mouse */
+        img:hover {
+            transform: scale(1.03);
+        }
+
+        .foto-perfil {
+            width: 150px; /* tamanho da foto */
+            height: 150px;
+            object-fit: cover; /* garante que a foto não distorça */
+            border-radius: 50%; /* deixa redonda */
+            border: 3px solid white; /* borda branca em volta */
+            margin-bottom: 10px; /* espaço abaixo da foto */
+        }
+
+        .projetos-container {
+            display: flex;
+            gap: 20px; /* espaço entre os cards */
+            flex-wrap: wrap; /* quebra linha em telas pequenas */
+            justify-content: center;
+        }
+
+        .projeto-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px; /* largura fixa */
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* sombra suave */
+            transition: transform 0.3s ease;
+        }
+
+        .projeto-card:hover {
+            transform: scale(1.03);
+        }
+
+        .projeto-card h3 {
+            margin-top: 0;
+            color: #222;
+        }
+
+        .habilidades-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .habilidade-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .habilidade-card:hover {
+            transform: scale(1.03);
+        }
+
+        .habilidade-card h3 {
+            margin-top: 0;
+            color: #222;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="fotoperfil.webp" alt="Foto de Anthony Guedes" class="foto-perfil">
+    <h1>Anthony Guedes</h1>
+    <p>Ciência da Computação - Universidade Franciscana</p>
+</header>
+
+<nav>
+    <a href="#sobre">Sobre Mim</a>
+    <a href="#projetos">Projetos</a>
+    <a href="#contato">Contato</a>
+</nav>
+
+
+<section id="sobre">
+    <h2>Sobre Mim</h2>
+    <p>Sou estudante do curso superior de Ciência da Computação, atualmente estou cursando o 6° semestre na Universidade Franciscana, em Santa Maria. Tenho experiências em projetos de softwares realizados na universidade com Java, HTML, CSS, JavaScript e estou aprendendo novas tecnologias constantemente.</p>
+</section>
+
+<section id="habilidades">
+    <h2>Habilidades</h2>
+    <div class="habilidades-container">
+        <div class="habilidade-card">
+            <h3>Habilidades Comportamentais</h3>
+            <ul>
+                <li>Trabalho em equipe</li>
+                <li>Boa comunicação</li>
+                <li>Resolução de problemas</li>
+                <li>Organização</li>
+            </ul>
+        </div>
+
+        <div class="habilidade-card">
+            <h3>Idiomas</h3>
+            <p><strong>Inglês:</strong> Avançado</p>
+            <p>Certificado: 450 horas de estudos de inglês pela YES Idiomas</p>
+        </div>
+    </div>
+</section>
+
+
+<section id="projetos">
+    <h2>Projetos</h2>
+    <div class="projetos-container">
+        <div class="projeto-card">
+            <h3>Projeto 1</h3>
+            <p>Breve descrição do projeto 1. Pode falar sobre as tecnologias usadas e o objetivo principal.</p>
+        </div>
+
+        <div class="projeto-card">
+            <h3>Projeto 2</h3>
+            <p>Breve descrição do projeto 2. Pode falar sobre as tecnologias usadas e o objetivo principal.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contato">
+    <h2>Contato</h2>
+    <a href="https://github.com/AnthyGuedes">
+        <img src="Github.png" alt="ícone GitHub" width="60">
+    </a>
+
+    <a href="mailto:anthony.guedes@ufn.edu.br">
+        <img src="email.png" alt="Enviar e-mail" width="60">
+    </a>
+
+    <p>Email: anthony.guedes@ufn.edu.br</p>
+
+</section>
+
+<footer>
+    <p>&copy; 2025 Seu Nome. Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
